@@ -43,7 +43,9 @@
       "Read(c:\\Users\\User\\Desktop\\Coding\\firegeo_py\\src\\firegeo\\models/**)",
       "Read(c:\\Users\\User\\Desktop\\Coding\\firegeo_py\\src\\firegeo\\core\\ai_providers/**)",
       "Read(c:\\Users\\User\\Desktop\\Coding\\firegeo_py\\src\\firegeo\\core\\ai_providers/**)",
-      "Read(c:\\Users\\User\\Desktop\\Coding\\firegeo_py\\src\\firegeo/**)"
+      "Read(c:\\Users\\User\\Desktop\\Coding\\firegeo_py\\src\\firegeo/**)",
+      "WebFetch(domain:ai.google.dev)",
+      "WebFetch(domain:docs.perplexity.ai)"
     ],
     "deny": [],
     "ask": []

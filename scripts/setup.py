@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-FireGEO Python 項目設置腳本
+LLM Brand Detector Python 項目設置腳本
 """
 
 import os
@@ -118,7 +118,7 @@ def setup_data_directory():
 
 def main():
     """主設置流程"""
-    print("🔥 FireGEO Python 項目設置")
+    print("🔥 LLM Brand Detector Python 項目設置")
     print("=" * 50)
     
     # 檢查系統要求

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-FireGEO 簡單啟動腳本
+LLM Brand Detector 簡單啟動腳本
 """
 
 import sys
@@ -16,7 +16,7 @@ try:
     from firegeo.main import main
     
     if __name__ == "__main__":
-        print("🔥 Starting FireGEO Monitor...")
+        print("🔥 Starting LLM Brand Detector Monitor...")
         print("=" * 50)
         
         # 檢查環境變數文件

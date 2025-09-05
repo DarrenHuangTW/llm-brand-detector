@@ -1,8 +1,8 @@
-"""FireGEO - AI Brand Visibility Analysis Tool - Streamlit Implementation"""
+"""LLM Brand Detector - AI Brand Visibility Analysis Tool - Streamlit Implementation"""
 
 __version__ = "0.2.0"
-__author__ = "FireGEO Team"
-__email__ = "team@firegeo.com"
+__author__ = "Darren Huang"
+__email__ = "darrenhhuang@gmail.com"
 
 # Lazy import to avoid streamlit dependency issues during testing
 def main():

@@ -6,7 +6,7 @@ import os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
 
 def main():
-    print("FireGEO Refactor Validation Test")
+    print("LLM Brand Detector Validation Test")
     print("=" * 40)
     
     tests_passed = 0

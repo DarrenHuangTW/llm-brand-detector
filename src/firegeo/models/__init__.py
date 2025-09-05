@@ -1,4 +1,4 @@
-"""FireGEO Models Module - Simplified"""
+"""LLM Brand Detector Models Module - Simplified"""
 
 from .analysis import (
     SimpleAnalysisRequest,

@@ -1,4 +1,4 @@
-"""FireGEO Core Module - Simplified"""
+"""LLM Brand Detector Core Module - Simplified"""
 
 from .simple_detector import SimpleBrandDetector
 from . import ai_providers

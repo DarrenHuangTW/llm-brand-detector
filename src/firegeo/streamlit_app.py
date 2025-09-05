@@ -1,4 +1,4 @@
-"""FireGEO Streamlit 多語言主應用"""
+"""LLM Brand Detector Streamlit 多語言主應用"""
 
 import streamlit as st
 import asyncio
@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 
 # Streamlit 頁面設定
 st.set_page_config(
-    page_title="FireGEO Brand Analysis",
+    page_title="LLM Brand Detector",
     page_icon="🔥",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -55,8 +55,8 @@ st.set_page_config(
 #             set_language(selected_lang)
 #             st.rerun()
 
-class FireGEOStreamlitApp:
-    """FireGEO Streamlit應用主類"""
+class LLMBrandDetectorApp:
+    """LLM Brand Detector Streamlit應用主類"""
     
     def __init__(self):
         self.config = StreamlitConfig()
@@ -572,29 +572,17 @@ class FireGEOStreamlitApp:
         with st.container():
             st.subheader(get_text("how_to_use"))
             
-            col1, col2 = st.columns([1, 1])
+            # Step 1
+            st.markdown(f"#### {get_text('step_1')}")
+            st.markdown(get_text('step_1_content'))
             
-            with col1:
-                # Step 1
-                st.markdown(f"#### {get_text('step_1')}")
-                st.markdown(get_text('step_1_content'))
-                
-                # Step 2
-                st.markdown(f"#### {get_text('step_2')}")
-                st.markdown(get_text('step_2_content'))
-                
-                # Step 3
-                st.markdown(f"#### {get_text('step_3')}")
-                st.markdown(get_text('step_3_content'))
+            # Step 2
+            st.markdown(f"#### {get_text('step_2')}")
+            st.markdown(get_text('step_2_content'))
             
-            with col2:
-                # Supported Models - PRICING INFORMATION REMOVED
-                st.markdown(f"#### {get_text('supported_models')}")
-                st.info("Model pricing information has been removed from this interface.")
-                
-                # Result interpretation
-                st.markdown(f"#### {get_text('result_interpretation')}")
-                st.markdown(get_text('result_symbols'))
+            # Step 3
+            st.markdown(f"#### {get_text('step_3')}")
+            st.markdown(get_text('step_3_content'))
         
         st.markdown("---")
         
@@ -602,68 +590,80 @@ class FireGEOStreamlitApp:
         with st.container():
             st.subheader(get_text("tech_architecture"))
             
-            col1, col2 = st.columns([1, 1])
+            # System overview with diagrams
+            st.write(get_text('system_overview'))
+            st.markdown(get_text('system_overview_content'))
             
-            with col1:
-                # Detection process
-                st.markdown(f"#### {get_text('detection_process')}")
-                st.markdown(get_text('detection_steps'))
-                
-                # Cost features  
-                st.markdown(f"#### {get_text('cost_features')}")
-                st.markdown(get_text('cost_features_content'))
+            # Display architecture diagrams
+            try:
+                st.image("src/firegeo/static/architecture-diagram.png", caption="System Architecture", use_container_width=True)
+                st.image("src/firegeo/static/workflow-diagram.png", caption="Analysis Workflow", use_container_width=True)
+            except Exception as e:
+                st.warning(f"Could not load diagrams: {str(e)}")
             
-            with col2:
-                # Information sources
-                st.markdown(f"#### {get_text('info_sources')}")
-                st.markdown(get_text('auto_detection'))
-                st.markdown(get_text('source_types'))
-                
-                # Analysis strategies
-                st.markdown(f"#### {get_text('analysis_strategies')}")
-                st.markdown(get_text('budget_config'))
-                st.markdown(get_text('budget_details'))
-                st.markdown(get_text('pro_config'))
-                st.markdown(get_text('pro_details'))
+            # No additional columns needed - simplified architecture section
         
         # 最佳實踐建議
         st.markdown("---")
         with st.container():
             st.subheader(get_text("best_practices"))
             
+            # Important notes first
+            st.write(get_text('important_notes'))
+            st.markdown(get_text('api_context'))
+            
+            # col1, col2 = st.columns([1, 1])
+            
+            # with col1:
+            #     # Prompt tips
+            #     st.write(get_text('prompt_tips'))
+            #     st.markdown(get_text('effective_prompts'))
+            #     st.markdown(get_text('effective_examples'))
+            #     st.markdown(get_text('avoid_prompts'))
+            #     st.markdown(get_text('avoid_examples'))
+            
+            # with col2:
+            #     # Leave empty or minimal content as requested
+            #     pass
+        
+        # 模型價格與選擇指南
+        st.markdown("---")
+        with st.container():
+            st.subheader(get_text("supported_models"))
+            
+            # Only keep the selection guide
+            st.write(get_text('selection_guide'))
+            
             col1, col2 = st.columns([1, 1])
             
             with col1:
-                # Prompt tips
-                st.markdown(f"#### {get_text('prompt_tips')}")
-                st.markdown(get_text('effective_prompts'))
-                st.markdown(get_text('effective_examples'))
-                st.markdown(get_text('avoid_prompts'))
-                st.markdown(get_text('avoid_examples'))
+                # Selection factors
+                st.markdown(get_text('selection_factors'))
             
             with col2:
-                # Model recommendations
-                st.markdown(f"#### {get_text('model_recommendations')}")
-                st.markdown(f"**{get_text('daily_analysis')}**")
-                st.markdown(f"**{get_text('important_decisions')}**")
-                st.markdown(f"**{get_text('realtime_info')}**")
-                st.markdown(f"**{get_text('cost_control')}**")
-                st.markdown(f"**{get_text('best_quality')}**")
+                # Official links
+                st.write(get_text('model_providers'))
+                st.markdown(get_text('provider_links'))
         
         # 版本資訊
         st.markdown("---")
         with st.container():
-            col1, col2, col3 = st.columns([1, 1, 1])
+            col1, col2 = st.columns([1, 1])
             with col1:
                 st.info(f"🔥 **{get_text('version_info')}**")
             with col2:
                 st.info(f"🤖 **{get_text('ai_integration')}**")
-            with col3:
-                st.info(f"⚡ **{get_text('cost_tracking')}**")
+            
+            # Performance boost info
+            # st.success(f"⚡ **{get_text('performance_boost')}**")
+            
+            # Developer credit
+            # st.markdown("---")
+            st.success("💻 **Developed by Darren Huang with Claude Code.** Connect with me on [LinkedIn](https://www.linkedin.com/in/hunghsunhuang/)")
 
 def main():
     """主程式入口點"""
-    app = FireGEOStreamlitApp()
+    app = LLMBrandDetectorApp()
     app.run()
 
 if __name__ == "__main__":

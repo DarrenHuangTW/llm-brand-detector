@@ -9,7 +9,7 @@ CURRENT_LANGUAGE = "en"
 TRANSLATIONS = {
     "zh-TW": {
         # 應用標題和描述
-        "app_title": "🔥 FireGEO 品牌分析",
+        "app_title": "🔥 LLM Brand Detector",
         "app_description": "**AI 驅動的多提供商品牌可見度分析平台**",
         
         # Tab 標籤
@@ -29,13 +29,13 @@ TRANSLATIONS = {
         # 分析設定
         "analysis_config": "📝 分析設定",
         "target_brand": "🎯 目標品牌",
-        "target_brand_placeholder": "例如：OpenAI、Notion、Tesla",
+        "target_brand_placeholder": "例如：Asana、Monday.com、Trello",
         "target_brand_help": "輸入您要分析的品牌名稱",
         "competitors": "🏆 競爭對手品牌 (最多 10 個)",
-        "competitors_placeholder": "每行輸入一個競爭對手：\nAnthropic\nGoogle\nMicrosoft",
+        "competitors_placeholder": "每行輸入一個競爭對手：\nNotion\nClickUp\nJira",
         "competitors_help": "輸入競爭對手品牌，每行一個。最多 10 個競爭對手。",
         "analysis_prompts": "💬 分析提示詞 (最多 10 個)",
-        "prompts_placeholder": "每行輸入一個提示詞：\n最好的 AI 公司是什麼？\n推薦頂級生產力工具\n哪個 AI 助手最受歡迎？",
+        "prompts_placeholder": "每行輸入一個提示詞：\n最佳的專案管理工具是什麼？\n推薦團隊協作平台\n哪個任務管理軟體最受歡迎？",
         "prompts_help": "輸入分析提示詞，每行一個。最多 10 個提示詞。",
         
         # 分析按鈕和狀態
@@ -74,14 +74,14 @@ TRANSLATIONS = {
         
         # 使用指南
         "user_guide_title": "📚 使用指南 & 技術架構",
-        "how_to_use": "🚀 如何使用 FireGEO",
+        "how_to_use": "🚀 如何使用 LLM Brand Detector",
         "step_1": "📋 第一步：設定 API 金鑰與模型",
         "step_1_content": """1. 在左側邊欄為每個 AI 提供商輸入 API 金鑰
 2. **必須提供 Google API 金鑰**（用於品牌檢測）
 3. 選擇每個提供商要使用的模型
 4. 點擊 \"🔍 驗證 API\" 驗證金鑰有效性""",
         "step_2": "🎯 第二步：配置分析參數",
-        "step_2_content": """1. 輸入**目標品牌名稱**（如：OpenAI、Notion、Tesla）
+        "step_2_content": """1. 輸入**目標品牌名稱**（如：Asana、Monday.com、Trello）
 2. 輸入**競爭對手品牌**（一行一個，最多10個）
 3. 輸入**分析提示詞**（一行一個，最多10個）""",
         "step_3": "⚡ 第三步：執行分析",
@@ -147,7 +147,7 @@ TRANSLATIONS = {
         # Model pricing details - REMOVED
         
         # 版本資訊
-        "version_info": "FireGEO v2.1.0 - 高性能版",
+        "version_info": "LLM Brand Detector v2.1.0 - 高性能版",
         "ai_integration": "4 AI 提供商整合",
         "cost_tracking": "即時成本追蹤",
         "performance_boost": "80% 性能提升 (6-8秒)",
@@ -155,7 +155,7 @@ TRANSLATIONS = {
     
     "en": {
         # App title and description
-        "app_title": "🔥 FireGEO Brand Analysis",
+        "app_title": "🔥 LLM Brand Detector",
         "app_description": "**AI-powered brand visibility analysis across multiple providers**",
         
         # Tab labels
@@ -175,13 +175,13 @@ TRANSLATIONS = {
         # Analysis config
         "analysis_config": "📝 Analysis Configuration",
         "target_brand": "🎯 Target Brand",
-        "target_brand_placeholder": "e.g., OpenAI, Notion, Tesla",
+        "target_brand_placeholder": "e.g., Asana, Monday.com, Trello",
         "target_brand_help": "Enter the brand you want to analyze",
         "competitors": "🏆 Competitor Brands (max 10)",
-        "competitors_placeholder": "Enter one competitor per line:\nAnthropic\nGoogle\nMicrosoft",
+        "competitors_placeholder": "Enter one competitor per line:\nNotion\nClickUp\nJira",
         "competitors_help": "Enter competitor brands, one per line. Maximum 10 competitors.",
         "analysis_prompts": "💬 Analysis Prompts (max 10)",
-        "prompts_placeholder": "Enter one prompt per line:\nWhat's the best AI company?\nRecommend top productivity tools\nWhich AI assistant is most popular?",
+        "prompts_placeholder": "Enter one prompt per line:\nWhat are the best project management tools?\nRecommend top team collaboration platforms\nWhich task management software is most popular?",
         "prompts_help": "Enter analysis prompts, one per line. Maximum 10 prompts.",
         
         # Analysis button and status
@@ -220,14 +220,14 @@ TRANSLATIONS = {
         
         # User guide
         "user_guide_title": "📚 User Guide & Technical Architecture",
-        "how_to_use": "🚀 How to Use FireGEO",
+        "how_to_use": "🚀 How to Use LLM Brand Detector",
         "step_1": "📋 Step 1: Set up API Keys & Models",
         "step_1_content": """1. Enter API keys for each AI provider in the left sidebar
 2. **Google API key is required** (for brand detection)
 3. Select the model to use for each provider
 4. Click "🔍 Validate APIs" to verify key validity""",
         "step_2": "🎯 Step 2: Configure Analysis Parameters",
-        "step_2_content": """1. Enter **Target Brand Name** (e.g., OpenAI, Notion, Tesla)
+        "step_2_content": """1. Enter **Target Brand Name** (e.g., Asana, Monday.com, Trello)
 2. Enter **Competitor Brands** (one per line, max 10)
 3. Enter **Analysis Prompts** (one per line, max 10)""",
         "step_3": "⚡ Step 3: Execute Analysis",
@@ -242,20 +242,14 @@ TRANSLATIONS = {
 - **❓ Question mark**: Detection failed or no data""",
         
         "tech_architecture": "⚙️ Technical Architecture & Features",
-        "detection_process": "🔄 Smart Brand Detection Process",
-        "detection_steps": """1. **🚀 True Parallel AI Calls**: Use asyncio.create_task() to simultaneously call multiple AI providers
-2. **⚡ Batch Brand Detection**: Single API call handles all brands (75% API reduction)
-3. **🔥 No Rate Limiting**: Remove unnecessary delays, maximize response speed
-4. **🎯 Smart Detection**: Use Gemini 2.5 Flash Lite for brand identification
-5. **📊 Semantic Understanding**: AI-driven detection, not simple keyword matching
-6. **💰 Cost Tracking**: Real-time calculation of Token usage and costs
-7. **🔄 Result Integration**: Unified format display of all analysis results""",
-        
-        "cost_features": "💰 Cost Control Features",
-        "cost_features_content": """- Real-time display of accurate cost per analysis
-- Support for different model cost comparisons
-- Perplexity search fees calculated separately
-- Provides budget, balanced, and professional configuration recommendations""",
+        "system_overview": "📋 System Overview",
+        "system_overview_content": """Our LLM Brand Detector uses a multi-layered architecture to efficiently process brand analysis requests:
+
+**Key Features:**
+- 🚀 **Parallel AI Processing**: Simultaneous calls to multiple providers
+- ⚡ **Batch Brand Detection**: Single API call for all brands (75% API reduction)
+- 🎯 **Smart Detection**: Gemini 2.5 Flash for accurate brand identification
+- 📊 **Real-time Results**: Live progress tracking and instant results""",
         
         "info_sources": "🌐 Online Search vs Built-in Knowledge",
         "auto_detection": "**Automatic Information Source Detection**:",
@@ -273,15 +267,45 @@ TRANSLATIONS = {
 - Estimate: ~$10-30 per 1000 analyses""",
         
         "best_practices": "💡 Best Practice Recommendations",
+        "important_notes": "⚠️ Important Notes",
+        "api_context": """**API Context Limitations:**
+This app uses direct API calls without user location or history context (unlike chat interfaces on chatgpt.com, claude.ai, etc.). For better results:
+- Specify country/region in prompts: *"Popular women's shoe brands in Singapore?"*
+- Provide context: *"Best project management tools for startups in 2024"*
+- Be explicit about scope: *"Enterprise CRM software in North America"*""",
+        
         "prompt_tips": "📝 Prompt Design Tips",
         "effective_prompts": "**Effective Prompt Examples**:",
-        "effective_examples": """- "Recommend the best project management tools"
-- "Which AI assistant is most popular?"
-- "Best customer support software for small business\"""",
+        "effective_examples": """- "Recommend the best project management tools for remote teams"
+- "Which AI assistant is most popular among developers?"
+- "Best customer support software for small business in Europe"
+- "Top productivity apps for students in Asia"
+- "Most trusted cloud storage providers in enterprise market\"""",
+        
         "avoid_prompts": "**Prompt Types to Avoid**:",
-        "avoid_examples": """- Too specific to a particular brand
-- Yes/no questions (get simple answers only)
-- Too abstract or vague questions""",
+        "avoid_examples": """- Too generic: "What are good tools?" → "What are the best CRM tools?"
+- Yes/no questions: "Is Slack good?" → "Compare team communication platforms"
+- Brand-specific: "Tell me about Notion" → "Compare note-taking applications"
+- Too vague: "Software recommendations" → "Best accounting software for freelancers\"""",
+        
+        "supported_models": "🤖 Supported AI Models & Pricing",
+        "pricing_note": "📋 Pricing Information",
+        "pricing_disclaimer": """**⚠️ Important**: Pricing information shown in this app is for reference only. 
+Always check official documentation for the most current rates as they may change frequently.""",
+        
+        "model_providers": "🔗 Official Documentation & Pricing",
+        "provider_links": """- **OpenAI**: [platform.openai.com/docs/pricing](https://platform.openai.com/docs/pricing)
+- **Anthropic**: [docs.anthropic.com/pricing](https://docs.anthropic.com/en/docs/about-claude/pricing)  
+- **Google**: [ai.google.dev/gemini-api/docs/pricing](https://ai.google.dev/gemini-api/docs/pricing)
+- **Perplexity**: [docs.perplexity.ai/getting-started/pricing](https://docs.perplexity.ai/getting-started/pricing)""",
+        
+        "selection_guide": "💡 Model Selection Considerations",
+        "selection_factors": """**Key Factors to Consider:**
+- **Budget**: Mini/Lite models for cost-effective analysis
+- **Quality**: Premium models (GPT-4o, Claude Sonnet) for important decisions
+- **Speed**: Flash models for faster responses  
+- **Context**: Perplexity for real-time information, others for general knowledge
+- **Volume**: Consider rate limits and bulk pricing for high-volume usage""",
         
         "model_recommendations": "🎯 Model Selection Recommendations",
         "daily_analysis": "**Daily Analysis**: GPT-4o-mini + Gemini 2.5 Flash Lite",
@@ -293,9 +317,8 @@ TRANSLATIONS = {
         # Model pricing details - REMOVED
         
         # Version info
-        "version_info": "FireGEO v2.1.0 - High Performance Edition",
-        "ai_integration": "4 AI Provider Integration",
-        "cost_tracking": "Real-time Cost Tracking",
+        "version_info": "LLM Brand Detector v2.1.0 - High Performance Edition",
+        "ai_integration": "4 AI Provider Integration", 
         "performance_boost": "80% Performance Boost (6-8 seconds)",
     }
 }

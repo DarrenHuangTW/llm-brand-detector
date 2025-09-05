@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""簡單的 FireGEO Streamlit 啟動腳本"""
+"""簡單的 LLM Brand Detector Streamlit 啟動腳本"""
 
 import os
 import sys

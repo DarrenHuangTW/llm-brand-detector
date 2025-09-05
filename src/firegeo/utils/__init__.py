@@ -1,4 +1,4 @@
-"""FireGEO Utils Module - Simplified"""
+"""LLM Brand Detector Utils Module - Simplified"""
 
 from .api_validation import validate_api_keys
 from .export import create_json_export, create_csv_export
