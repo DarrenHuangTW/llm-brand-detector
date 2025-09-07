@@ -324,7 +324,7 @@ class LLMBrandDetectorApp:
                     
                     # 更新進度
                     current_step += 1
-                    parallel_progress = f"{get_text('progress_completed_providers')} {completed_providers}/{len(providers)} 提供商 - Prompt {prompt_idx + 1}/{len(request.prompts)}"
+                    parallel_progress = f"{get_text('progress_completed_providers')} {completed_providers}/{len(providers)} AI Providers - Prompt {prompt_idx + 1}/{len(request.prompts)}"
                     progress_placeholder.progress(current_step / total_steps, text=parallel_progress)
                     status_placeholder.info(parallel_progress)
                     
@@ -596,8 +596,8 @@ class LLMBrandDetectorApp:
             
             # Display architecture diagrams
             try:
-                st.image("src/firegeo/static/architecture-diagram.png", caption="System Architecture", use_container_width=True)
-                st.image("src/firegeo/static/workflow-diagram.png", caption="Analysis Workflow", use_container_width=True)
+                st.image("src/firegeo/static/architecture-diagram.png", caption="System Architecture", width="stretch")
+                st.image("src/firegeo/static/workflow-diagram.png", caption="Analysis Workflow", width="stretch")
             except Exception as e:
                 st.warning(f"Could not load diagrams: {str(e)}")
             
